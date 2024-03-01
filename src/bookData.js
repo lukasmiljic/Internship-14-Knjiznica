@@ -1,13 +1,3 @@
-export const book = {
-  Title: "test",
-  Author: "test",
-  CoverArt: "",
-  PublishingHouse: "",
-  ReleaseDate: "",
-  Genre: "",
-  Amount: "",
-};
-
 const books = [
   {
     Title: "The Great Gatsby",
@@ -172,3 +162,5 @@ const books = [
     Amount: 9,
   },
 ];
+
+export default books;

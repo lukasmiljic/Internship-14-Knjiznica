@@ -1,10 +1,18 @@
 import "./App.css";
-import Book from "./components/Book";
-import { book } from "./data";
+import Book from "./components/Book.jsx";
+import books from "./bookData.js";
 
-
-function App() {
-  return <Book title={book.Title} author={book.Author} />;
-}
+const App = () => {
+  return (
+    <>
+      <h1>Books</h1>
+      <div>
+        {books.map((book, index) => (
+          <Book index={index} key={index} {...book} />
+        ))}
+      </div>
+    </>
+  );
+};
 
 export default App;
