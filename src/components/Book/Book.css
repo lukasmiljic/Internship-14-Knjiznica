@@ -37,7 +37,7 @@
 .loan-book-button {
   background: none;
   color: inherit;
-  /* background-color: black; */
+  color: black;
   border-radius: 50%;
   border: none;
   font: inherit;
@@ -45,13 +45,19 @@
   outline: inherit;
   margin-left: 1em;
 }
+.loan-book-button:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
 
 .loan-book-button.inactive {
-  background-color: #ccc;
+  color: #ccc;
 }
+
 .loan-book-button.borrow {
-  background-color: #ccc;
+  color: greenyellow;
 }
 .loan-book-button.return {
-  background-color: #ccc;
+  color: red;
 }

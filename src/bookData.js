@@ -25,10 +25,10 @@ const books = [
   },
   {
     UUID: uuidv4(),
-    Title:
-      "1984 (Nineteen eighty-four)",
+    Title: "1984 (Nineteen eighty-four)",
     Author: "George Orwell",
-    CoverArt: "https://upload.wikimedia.org/wikipedia/en/5/51/1984_first_edition_cover.jpg",
+    CoverArt:
+      "https://upload.wikimedia.org/wikipedia/en/5/51/1984_first_edition_cover.jpg",
     PublishingHouse: "Secker & Warburg",
     ReleaseDate: "1949-06-08",
     Genre: ["Dystopian", "Fiction"],

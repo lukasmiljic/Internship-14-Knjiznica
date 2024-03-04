@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Book.css";
 
 const Book = (props) => {
@@ -11,6 +12,16 @@ const Book = (props) => {
     ReleaseDate,
     Amount,
   } = props;
+
+  const [bookAmount, setBookAmount] = useState(Amount);
+
+  const borrowBook = () => {
+    setBookAmount(bookAmount - 1);
+  };
+
+  const returnBook = () => {
+    setBookAmount(bookAmount + 1);
+  };
 
   return (
     <>
@@ -32,13 +43,18 @@ const Book = (props) => {
           <span className="book-info"> Release date: </span> {ReleaseDate}
         </p>
         <div className="loan-book">
-          <p>amount: {Amount}</p>
-          <button className="loan-book-button">
-            {/* <i class="fa-solid fa-plus"></i> */}
-            Borrow
-          </button>
-          <button className="loan-book-button">
-            {/* <i class="fa-solid fa-minus"></i> */}
+          <p>amount: {bookAmount}</p>
+          {bookAmount <= 0 ? (
+            <button onClick={""} className="loan-book-button inactive">
+              Borrow
+            </button>
+          ) : (
+            <button onClick={borrowBook} className="loan-book-button borrow">
+              Borrow
+            </button>
+          )}
+
+          <button onClick={returnBook} className="loan-book-button return">
             Return
           </button>
         </div>
