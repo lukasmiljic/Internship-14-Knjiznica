@@ -1,16 +1,11 @@
 import "./App.css";
-import Book from "./components/Book.jsx";
-import books from "./bookData.js";
+import BookGrid from "./components/BookGrid/BookGrid.jsx";
 
 const App = () => {
   return (
     <>
       <h1>Books</h1>
-      <div>
-        {books.map((book, index) => (
-          <Book key={index} {...book} />
-        ))}
-      </div>
+      <BookGrid />
     </>
   );
 };
