@@ -10,7 +10,8 @@ const BookGrid = (props) => {
         .filter((item) => {
           return search.toLowerCase() === ""
             ? item
-            : item.Title.toLowerCase().includes(search.toLowerCase());
+            : item.Title.toLowerCase().includes(search.toLowerCase()) ||
+              item.Author.toLowerCase().includes(search.toLowerCase());
         })
         .map((book, index) => (
           <Book key={index} {...book} />
