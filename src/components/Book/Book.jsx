@@ -1,4 +1,5 @@
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import "./Book.css";
 
 const Book = (props) => {
@@ -16,11 +17,17 @@ const Book = (props) => {
   const [bookAmount, setBookAmount] = useState(Amount);
 
   const borrowBook = () => {
+    toast.success("Book borrowed");
     setBookAmount(bookAmount - 1);
   };
 
   const returnBook = () => {
+    toast.success("Book returned");
     setBookAmount(bookAmount + 1);
+  };
+
+  const failedBorrow = () => {
+    toast.error("Book not available");
   };
 
   return (
@@ -45,13 +52,17 @@ const Book = (props) => {
         <div className="loan-book">
           <p>amount: {bookAmount}</p>
           {bookAmount <= 0 ? (
-            <button onClick={""} className="loan-book-button inactive">
+            <button
+              onClick={failedBorrow}
+              className="loan-book-button inactive">
               Borrow
             </button>
           ) : (
-            <button onClick={borrowBook} className="loan-book-button borrow">
-              Borrow
-            </button>
+            <>
+              <button onClick={borrowBook} className="loan-book-button borrow">
+                Borrow
+              </button>
+            </>
           )}
 
           <button onClick={returnBook} className="loan-book-button return">
@@ -59,6 +70,7 @@ const Book = (props) => {
           </button>
         </div>
       </div>
+      <Toaster />
     </>
   );
 };
