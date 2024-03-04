@@ -8,7 +8,7 @@ const App = () => {
       <h1>Books</h1>
       <div>
         {books.map((book, index) => (
-          <Book index={index} key={index} {...book} />
+          <Book key={index} {...book} />
         ))}
       </div>
     </>

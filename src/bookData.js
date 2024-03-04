@@ -1,5 +1,8 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const books = [
   {
+    UUID: uuidv4(),
     Title: "The Great Gatsby",
     Author: "F. Scott Fitzgerald",
     CoverArt: "gatsby.jpg",
@@ -9,6 +12,7 @@ const books = [
     Amount: 1,
   },
   {
+    UUID: uuidv4(),
     Title: "To Kill a Mockingbird",
     Author: "Harper Lee",
     CoverArt: "mockingbird.jpg",
@@ -18,6 +22,7 @@ const books = [
     Amount: 2,
   },
   {
+    UUID: uuidv4(),
     Title: "1984",
     Author: "George Orwell",
     CoverArt: "1984.jpg",
@@ -27,6 +32,7 @@ const books = [
     Amount: 3,
   },
   {
+    UUID: uuidv4(),
     Title: "The Catcher in the Rye",
     Author: "J. D. Salinger",
     CoverArt: "catcher.jpg",
@@ -36,6 +42,7 @@ const books = [
     Amount: 4,
   },
   {
+    UUID: uuidv4(),
     Title: "Pride and Prejudice",
     Author: "Jane Austen",
     CoverArt: "pride.jpg",
@@ -45,6 +52,7 @@ const books = [
     Amount: 5,
   },
   {
+    UUID: uuidv4(),
     Title: "Harry Potter and the Philosopher's Stone",
     Author: "J.K. Rowling",
     CoverArt: "harry_potter.jpg",
@@ -54,6 +62,7 @@ const books = [
     Amount: 6,
   },
   {
+    UUID: uuidv4(),
     Title: "The Lord of the Rings",
     Author: "J.R.R. Tolkien",
     CoverArt: "lotr.jpg",
@@ -63,6 +72,7 @@ const books = [
     Amount: 7,
   },
   {
+    UUID: uuidv4(),
     Title: "The Hobbit",
     Author: "J.R.R. Tolkien",
     CoverArt: "hobbit.jpg",
@@ -72,6 +82,7 @@ const books = [
     Amount: 8,
   },
   {
+    UUID: uuidv4(),
     Title: "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
     Author: "C.S. Lewis",
     CoverArt: "narnia.jpg",
@@ -81,6 +92,7 @@ const books = [
     Amount: 9,
   },
   {
+    UUID: uuidv4(),
     Title: "The Da Vinci Code",
     Author: "Dan Brown",
     CoverArt: "davinci.jpg",
@@ -90,6 +102,7 @@ const books = [
     Amount: 10,
   },
   {
+    UUID: uuidv4(),
     Title: "Les Misérables",
     Author: "Victor Hugo",
     CoverArt: "les_miserables.jpg",
@@ -99,6 +112,7 @@ const books = [
     Amount: 1,
   },
   {
+    UUID: uuidv4(),
     Title: "Der Steppenwolf",
     Author: "Hermann Hesse",
     CoverArt: "steppenwolf.jpg",
@@ -108,6 +122,7 @@ const books = [
     Amount: 2,
   },
   {
+    UUID: uuidv4(),
     Title: "Il nome della rosa",
     Author: "Umberto Eco",
     CoverArt: "nome_della_rosa.jpg",
@@ -117,6 +132,7 @@ const books = [
     Amount: 3,
   },
   {
+    UUID: uuidv4(),
     Title: "Les Trois Mousquetaires",
     Author: "Alexandre Dumas",
     CoverArt: "trois_mousquetaires.jpg",
@@ -126,6 +142,7 @@ const books = [
     Amount: 5,
   },
   {
+    UUID: uuidv4(),
     Title: "Der Process",
     Author: "Franz Kafka",
     CoverArt: "der_process.jpg",
@@ -135,6 +152,7 @@ const books = [
     Amount: 6,
   },
   {
+    UUID: uuidv4(),
     Title: "I Promessi Sposi",
     Author: "Alessandro Manzoni",
     CoverArt: "promessi_sposi.jpg",
@@ -144,6 +162,7 @@ const books = [
     Amount: 7,
   },
   {
+    UUID: uuidv4(),
     Title: "Gospoda Glembajevi",
     Author: "Miroslav Krleža",
     CoverArt: "glembajevi.jpg",
@@ -153,6 +172,7 @@ const books = [
     Amount: 8,
   },
   {
+    UUID: uuidv4(),
     Title: "Le Petit Prince",
     Author: "Antoine de Saint-Exupéry",
     CoverArt: "petit_prince.jpg",
