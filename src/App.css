@@ -25,6 +25,21 @@ body {
 header {
   width: 100%;
   max-width: 1400px;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0 auto 0 0;
+}
+
+header input {
+  font-size: 1.15em;
+  color: white;
+  background-color: black;
+  border: none;
+  border-bottom: 3px solid white;
+  margin-left: 1em;
 }
 
 main {
@@ -45,6 +60,6 @@ main {
     padding: 50px;
   }
   header {
-    padding-left: 50px;
+    padding: 0px 50px;
   }
 }
