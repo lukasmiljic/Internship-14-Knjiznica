@@ -1,0 +1,57 @@
+.book-card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+  transition: border 0.3s, box-shadow 0.3s, transform 0.3s;
+  cursor: default;
+}
+
+.book-card:hover {
+  border: 1px solid #aaa;
+  box-shadow: 0 0 15px #aaa;
+  transform: translateY(-5px);
+}
+
+.book-card h2 {
+  font-size: 28px;
+  margin: 0px 0px 0.3em;
+  position: relative;
+}
+
+.book-card img {
+  margin: 0px 0px 0.2em;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.book-card p {
+  margin: 0px 0px 0.2em;
+}
+
+.loan-book {
+  display: flex;
+  flex-direction: row;
+}
+
+.loan-book-button {
+  background: none;
+  color: inherit;
+  /* background-color: black; */
+  border-radius: 50%;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin-left: 1em;
+}
+
+.loan-book-button.inactive {
+  background-color: #ccc;
+}
+.loan-book-button.borrow {
+  background-color: #ccc;
+}
+.loan-book-button.return {
+  background-color: #ccc;
+}
