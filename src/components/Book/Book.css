@@ -3,7 +3,8 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px #ccc;
-  transition: border 0.3s, box-shadow 0.3s, transform 0.3s;
+  transition: border 0.3s, box-shadow 0.3s, transform 0.3s, opacity 0.3s,
+    filter 0.3s;
   cursor: default;
 }
 
@@ -54,6 +55,13 @@
 .book-card.inactive {
   filter: grayscale(100%);
   opacity: 0.5;
+  box-shadow: none;
+}
+
+.book-card.inactive:hover {
+  transform: none;
+  border: 1px solid #ccc;
+  box-shadow: none;
 }
 
 .loan-book-button.inactive {

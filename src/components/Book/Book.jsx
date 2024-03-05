@@ -32,7 +32,7 @@ const Book = (props) => {
 
   return (
     <>
-      <div className={`book-card ${bookAmount <= 0 ? 'inactive' : ''}`} id={`book-${UUID}`}>
+      <div className={`book-card ${bookAmount <= 0 && 'inactive'}`} id={`book-${UUID}`}>
         <h2>{Title}</h2>
         <img src={CoverArt} alt={`${Title} Cover art`} />
         <p>
