@@ -32,7 +32,7 @@ const Book = (props) => {
 
   return (
     <>
-      <div className="book-card" id={`book-${UUID}`}>
+      <div className={`book-card ${bookAmount <= 0 ? 'inactive' : ''}`} id={`book-${UUID}`}>
         <h2>{Title}</h2>
         <img src={CoverArt} alt={`${Title} Cover art`} />
         <p>
@@ -52,6 +52,7 @@ const Book = (props) => {
         <div className="loan-book">
           <p>amount: {bookAmount}</p>
           {bookAmount <= 0 ? (
+            
             <button
               onClick={failedBorrow}
               className="loan-book-button inactive">

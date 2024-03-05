@@ -51,6 +51,11 @@
   text-underline-offset: 3px;
 }
 
+.book-card.inactive {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
 .loan-book-button.inactive {
   color: #ccc;
 }

@@ -1,12 +1,12 @@
 import Book from "../Book/Book";
-import books2 from "../../bookData";
+import books from "../../bookData";
 
 const BookGrid = (props) => {
   const { search } = props;
 
   return (
     <div className="book-grid">
-      {books2
+      {books
         .filter((item) => {
           return search.toLowerCase() === ""
             ? item
