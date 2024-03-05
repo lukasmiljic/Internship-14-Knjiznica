@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
-const books = [
+const booksUnsorted = [
   {
     UUID: uuidv4(),
     Title: "The Great Gatsby",
@@ -197,5 +197,16 @@ const books = [
     Amount: 9,
   },
 ];
+
+const books = booksUnsorted.sort((a, b) => {
+  if (a.Title[0] === b.Title[0]) {
+    if (a.Author[0] === b.Author[0]) {
+      return a.ReleaseDate.localeCompare(b.ReleaseDate);
+    } else {
+      return a.Author.localeCompare(b.Author);
+    }
+  }
+  return a.Title.localeCompare(b.Title);
+});
 
 export default books;
