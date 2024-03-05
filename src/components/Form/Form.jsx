@@ -69,13 +69,14 @@ const Form = (props) => {
         onChange={handleChange}
         id="Genre"
         name="Genre"
+        defaultValue={"Novel"}
         value={newBook.Genre}>
-        <option value="Roman">Novel</option>
-        <option value="Poezija">Poetry</option>
+        <option value="Novel">Novel</option>
+        <option value="Poetry">Poetry</option>
         <option value="Drama">Drama</option>
-        <option value="Fantazija">Fantasy</option>
-        <option value="Znanstvena Fantastika">Science Fiction</option>
-        <option value="Biografija">Biography</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Science Fiction">Science Fiction</option>
+        <option value="Biography">Biography</option>
       </select>
 
       <label>Release date</label>

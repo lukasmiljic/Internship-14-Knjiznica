@@ -16,6 +16,13 @@ const Book = (props) => {
 
   const [bookAmount, setBookAmount] = useState(Amount);
 
+  const art =
+    CoverArt.length > 0
+      ? CoverArt
+      : "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg";
+
+  console.log(art);
+
   const borrowBook = () => {
     toast.success("Book borrowed");
     setBookAmount(bookAmount - 1);
@@ -36,7 +43,7 @@ const Book = (props) => {
         className={`book-card ${bookAmount <= 0 && "inactive"}`}
         id={`book-${UUID}`}>
         <h2>{Title}</h2>
-        <img src={CoverArt} alt={`${Title} Cover art`} />
+        <img src={art} alt={`${Title} Cover art`} />
         <p>
           <span className="book-info"> Author: </span>
           {Author}

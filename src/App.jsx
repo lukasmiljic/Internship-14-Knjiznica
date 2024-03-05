@@ -11,6 +11,8 @@ const App = () => {
     setBookArray([...bookArray, newBook]);
   }
 
+  console.log(bookArray)
+
   return (
     <>
       <div className="header-wrapper">
