@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./App.css";
 import BookGrid from "./components/BookGrid/BookGrid.jsx";
+import Modal from "./components/Modal/Modal.jsx";
 
 const App = () => {
   const [search, setSearch] = useState("");
@@ -22,9 +22,7 @@ const App = () => {
       <main>
         <BookGrid search={search} />
       </main>
-      <div className="add-new-book-btn">
-        <i className="fa-solid fa-plus"></i>
-      </div>
+      <Modal />
     </>
   );
 };

@@ -1,0 +1,18 @@
+.new-book-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-book-form label {
+  margin: 10px 0 0;
+}
+input[type="submit"] {
+  margin: 10px 0 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"].inactive {
+  pointer-events: none;
+  opacity: 0.5;
+}

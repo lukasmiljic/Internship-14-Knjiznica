@@ -1,5 +1,5 @@
 import Book from "../Book/Book";
-import books from "../../bookData";
+import books from "../../data/bookData";
 
 const BookGrid = (props) => {
   const { search } = props;
