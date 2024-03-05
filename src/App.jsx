@@ -12,7 +12,7 @@ const App = () => {
       <div className="header-wrapper">
         <header>
           <h1>Books</h1>
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i className="fa-solid fa-magnifying-glass"></i>
           <input
             type="text"
             placeholder="Search for books..."
@@ -22,6 +22,9 @@ const App = () => {
       <main>
         <BookGrid search={search} />
       </main>
+      <div className="add-new-book-btn">
+        <i className="fa-solid fa-plus"></i>
+      </div>
     </>
   );
 };
