@@ -1,8 +1,8 @@
 import Book from "../Book/Book";
-import books from "../../data/bookData";
+// import books from "../../data/bookData";
 
 const BookGrid = (props) => {
-  const { search } = props;
+  const {books, search } = props;
 
   return (
     <div className="book-grid">

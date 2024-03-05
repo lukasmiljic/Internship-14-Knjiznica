@@ -1,9 +1,11 @@
 import { useState } from "react";
-import books from "../../data/bookData";
 import { v4 as uuidv4 } from "uuid";
 import "./form.css";
 
-const Form = ({ toggleModal }) => {
+const Form = (props) => {
+
+  const { handleNewBook, toggleModal } = props;
+
   const [newBook, setNewBook] = useState({
     UUID: uuidv4(),
     Title: "",
@@ -17,9 +19,10 @@ const Form = ({ toggleModal }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    books.push(newBook);
-    console.log(newBook);
-    console.log(books);
+    // books.push(newBook);
+    // console.log(newBook);
+    // console.log(books);
+    handleNewBook(newBook);
     toggleModal();
   };
 

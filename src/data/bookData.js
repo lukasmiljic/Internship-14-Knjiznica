@@ -9,7 +9,7 @@ const booksUnsorted = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg/330px-The_Great_Gatsby_Cover_1925_Retouched.jpg",
     PublishingHouse: "Charles Scribner's Sons",
     ReleaseDate: "1925-04-10",
-    Genre: ["Fiction"],
+    Genre: "Fiction",
     Amount: 1,
   },
   {
@@ -20,7 +20,7 @@ const booksUnsorted = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/330px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg",
     PublishingHouse: "J. B. Lippincott & Co.",
     ReleaseDate: "1960-07-11",
-    Genre: ["Fiction"],
+    Genre: "Fiction",
     Amount: 2,
   },
   {
@@ -31,7 +31,7 @@ const booksUnsorted = [
       "https://upload.wikimedia.org/wikipedia/en/5/51/1984_first_edition_cover.jpg",
     PublishingHouse: "Secker & Warburg",
     ReleaseDate: "1949-06-08",
-    Genre: ["Dystopian", "Fiction"],
+    Genre: "Dystopian",
     Amount: 3,
   },
   {
@@ -42,7 +42,7 @@ const booksUnsorted = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/The_Catcher_in_the_Rye_%281951%2C_first_edition_cover%29.jpg/330px-The_Catcher_in_the_Rye_%281951%2C_first_edition_cover%29.jpg",
     PublishingHouse: "Little, Brown and Company",
     ReleaseDate: "1951-07-16",
-    Genre: ["Fiction"],
+    Genre: "Fiction",
     Amount: 4,
   },
   {
@@ -52,7 +52,7 @@ const booksUnsorted = [
     CoverArt: "https://www.gutenberg.org/files/1342/1342-h/images/cover.jpg",
     PublishingHouse: "T. Egerton, Whitehall",
     ReleaseDate: "1813-01-28",
-    Genre: ["Romance", "Fiction"],
+    Genre: "Romance",
     Amount: 5,
   },
   {
@@ -63,7 +63,7 @@ const booksUnsorted = [
       "https://upload.wikimedia.org/wikipedia/en/6/6b/Harry_Potter_and_the_Philosopher%27s_Stone_Book_Cover.jpg",
     PublishingHouse: "Bloomsbury",
     ReleaseDate: "1997-06-26",
-    Genre: ["Fantasy", "Fiction"],
+    Genre: "Fantasy",
     Amount: 6,
   },
   {
@@ -74,7 +74,7 @@ const booksUnsorted = [
       "https://upload.wikimedia.org/wikipedia/en/e/e9/First_Single_Volume_Edition_of_The_Lord_of_the_Rings.gif",
     PublishingHouse: "Allen & Unwin",
     ReleaseDate: "1954-07-29",
-    Genre: ["Fantasy"],
+    Genre: "Fantasy",
     Amount: 7,
   },
   {
@@ -85,7 +85,7 @@ const booksUnsorted = [
       "https://upload.wikimedia.org/wikipedia/en/4/4a/TheHobbit_FirstEdition.jpg",
     PublishingHouse: "Allen & Unwin",
     ReleaseDate: "1937-09-21",
-    Genre: ["Fantasy"],
+    Genre: "Fantasy",
     Amount: 8,
   },
   {
@@ -96,7 +96,7 @@ const booksUnsorted = [
       "https://upload.wikimedia.org/wikipedia/en/c/cb/The_Chronicles_of_Narnia_box_set_cover.jpg",
     PublishingHouse: "Geoffrey Bles",
     ReleaseDate: "1950-10-16",
-    Genre: ["Fantasy"],
+    Genre: "Fantasy",
     Amount: 9,
   },
   {
@@ -106,7 +106,7 @@ const booksUnsorted = [
     CoverArt: "https://upload.wikimedia.org/wikipedia/en/6/6b/DaVinciCode.jpg",
     PublishingHouse: "Doubleday",
     ReleaseDate: "2003-03-18",
-    Genre: ["Mystery", "Thriller"],
+    Genre: "Mystery",
     Amount: 10,
   },
   {
@@ -117,7 +117,7 @@ const booksUnsorted = [
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1411852091i/24280.jpg",
     PublishingHouse: "A. Lacroix, Verboeckhoven & Cie.",
     ReleaseDate: "1862-03-04",
-    Genre: ["Historical", "Fiction"],
+    Genre: "Historical",
     Amount: 1,
   },
   {
@@ -128,7 +128,7 @@ const booksUnsorted = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Hermann_Hesse_Der_Steppenwolf_1927.jpg/330px-Hermann_Hesse_Der_Steppenwolf_1927.jpg",
     PublishingHouse: "S. Fischer Verlag",
     ReleaseDate: "1927-10-05",
-    Genre: ["Philosophical", "Fiction"],
+    Genre: "Philosophical",
     Amount: 2,
   },
   {
@@ -139,7 +139,7 @@ const booksUnsorted = [
       "https://upload.wikimedia.org/wikipedia/en/e/eb/The_Name_of_the_Rose.jpg",
     PublishingHouse: "Bompiani",
     ReleaseDate: "1980-10-16",
-    Genre: ["Historical", "Mystery"],
+    Genre: "Historical",
     Amount: 3,
   },
   {
@@ -150,7 +150,7 @@ const booksUnsorted = [
       "https://www.ecoledesloisirs.fr/sites/default/files/styles/couverture_livre/public/couverture/9782211238397.jpg?itok=PCiOYiQx",
     PublishingHouse: "Baudry",
     ReleaseDate: "1844-03-14",
-    Genre: ["Historical", "Adventure"],
+    Genre: "Historical",
     Amount: 5,
   },
   {
@@ -161,7 +161,7 @@ const booksUnsorted = [
       "https://upload.wikimedia.org/wikipedia/commons/8/87/Kafka_Der_Prozess_1925.jpg",
     PublishingHouse: "Kurt Wolff Verlag",
     ReleaseDate: "1925-04-26",
-    Genre: ["Existential", "Fiction"],
+    Genre: "Existential",
     Amount: 6,
   },
   {
@@ -172,7 +172,7 @@ const booksUnsorted = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Frontispiece_promessi_sposi.jpg/347px-Frontispiece_promessi_sposi.jpg",
     PublishingHouse: "Stamperia di Paolo Andrea Molina",
     ReleaseDate: "1827-07-15",
-    Genre: ["Historical", "Romance"],
+    Genre: "Historical",
     Amount: 7,
   },
   {
@@ -183,7 +183,7 @@ const booksUnsorted = [
       "https://upload.wikimedia.org/wikipedia/hr/0/08/Gospoda_glembajevi.jpg",
     PublishingHouse: "Zora",
     ReleaseDate: "1928-12-01",
-    Genre: ["Drama"],
+    Genre: "Drama",
     Amount: 8,
   },
   {
@@ -193,7 +193,7 @@ const booksUnsorted = [
     CoverArt: "https://upload.wikimedia.org/wikipedia/en/0/05/Littleprince.JPG",
     PublishingHouse: "Reynal & Hitchcock",
     ReleaseDate: "1943-04-06",
-    Genre: ["Philosophical", "Fiction"],
+    Genre: "Philosophical",
     Amount: 9,
   },
 ];

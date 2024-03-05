@@ -1,11 +1,15 @@
 import { useState } from "react";
 import BookGrid from "./components/BookGrid/BookGrid.jsx";
 import Modal from "./components/Modal/Modal.jsx";
+import books from "./data/bookData.js";
 
 const App = () => {
   const [search, setSearch] = useState("");
+  const [bookArray, setBookArray] = useState(books);
 
-  console.log(search);
+  const handleNewBook = (newBook) => { 
+    setBookArray([...bookArray, newBook]);
+  }
 
   return (
     <>
@@ -20,9 +24,9 @@ const App = () => {
         </header>
       </div>
       <main>
-        <BookGrid search={search} />
+        <BookGrid books={bookArray} search={search} />
       </main>
-      <Modal />
+      <Modal handleNewBook={handleNewBook} />
     </>
   );
 };
